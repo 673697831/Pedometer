@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		206CC25C19F95DEC0073B2E2 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 206CC25B19F95DEB0073B2E2 /* CoreLocation.framework */; };
 		20AB14F619F8B6190088106A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AB14F519F8B6190088106A /* Foundation.framework */; };
 		20AB14F819F8B6190088106A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AB14F719F8B6190088106A /* CoreGraphics.framework */; };
 		20AB14FA19F8B6190088106A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AB14F919F8B6190088106A /* UIKit.framework */; };
@@ -19,6 +20,10 @@
 		20AB151119F8B6190088106A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AB14F919F8B6190088106A /* UIKit.framework */; };
 		20AB151919F8B6190088106A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 20AB151719F8B6190088106A /* InfoPlist.strings */; };
 		20AB151B19F8B6190088106A /* PedometerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AB151A19F8B6190088106A /* PedometerTests.m */; };
+		20AB152619F8C36A0088106A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20AB152519F8C36A0088106A /* ViewController.m */; };
+		20AB152819F931400088106A /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AB152719F931400088106A /* AVFoundation.framework */; };
+		20AB152A19F931530088106A /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 20AB152919F931530088106A /* AudioToolbox.framework */; };
+		7680B66906A84654B95CE315 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D9615AFB07124585B4D029FB /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -32,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		206CC25B19F95DEB0073B2E2 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		20AB14F219F8B6190088106A /* Pedometer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pedometer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20AB14F519F8B6190088106A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		20AB14F719F8B6190088106A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -48,6 +54,12 @@
 		20AB151619F8B6190088106A /* PedometerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "PedometerTests-Info.plist"; sourceTree = "<group>"; };
 		20AB151819F8B6190088106A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		20AB151A19F8B6190088106A /* PedometerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PedometerTests.m; sourceTree = "<group>"; };
+		20AB152419F8C36A0088106A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		20AB152519F8C36A0088106A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		20AB152719F931400088106A /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		20AB152919F931530088106A /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		D0FBB30FB4B348F3863E0F09 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		D9615AFB07124585B4D029FB /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,9 +67,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				206CC25C19F95DEC0073B2E2 /* CoreLocation.framework in Frameworks */,
+				20AB152A19F931530088106A /* AudioToolbox.framework in Frameworks */,
+				20AB152819F931400088106A /* AVFoundation.framework in Frameworks */,
 				20AB14F819F8B6190088106A /* CoreGraphics.framework in Frameworks */,
 				20AB14FA19F8B6190088106A /* UIKit.framework in Frameworks */,
 				20AB14F619F8B6190088106A /* Foundation.framework in Frameworks */,
+				7680B66906A84654B95CE315 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -81,6 +97,7 @@
 				20AB151419F8B6190088106A /* PedometerTests */,
 				20AB14F419F8B6190088106A /* Frameworks */,
 				20AB14F319F8B6190088106A /* Products */,
+				D0FBB30FB4B348F3863E0F09 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -96,10 +113,14 @@
 		20AB14F419F8B6190088106A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				206CC25B19F95DEB0073B2E2 /* CoreLocation.framework */,
+				20AB152919F931530088106A /* AudioToolbox.framework */,
+				20AB152719F931400088106A /* AVFoundation.framework */,
 				20AB14F519F8B6190088106A /* Foundation.framework */,
 				20AB14F719F8B6190088106A /* CoreGraphics.framework */,
 				20AB14F919F8B6190088106A /* UIKit.framework */,
 				20AB150E19F8B6190088106A /* XCTest.framework */,
+				D9615AFB07124585B4D029FB /* libPods.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -111,6 +132,8 @@
 				20AB150519F8B6190088106A /* AppDelegate.m */,
 				20AB150719F8B6190088106A /* Images.xcassets */,
 				20AB14FC19F8B6190088106A /* Supporting Files */,
+				20AB152419F8C36A0088106A /* ViewController.h */,
+				20AB152519F8C36A0088106A /* ViewController.m */,
 			);
 			path = Pedometer;
 			sourceTree = "<group>";
@@ -151,9 +174,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 20AB151E19F8B6190088106A /* Build configuration list for PBXNativeTarget "Pedometer" */;
 			buildPhases = (
+				E8D2A06049DC40B7BEDCFC97 /* Check Pods Manifest.lock */,
 				20AB14EE19F8B6190088106A /* Sources */,
 				20AB14EF19F8B6190088106A /* Frameworks */,
 				20AB14F019F8B6190088106A /* Resources */,
+				939B1DCDDEB642DDAD0CDE0D /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -234,11 +259,45 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		939B1DCDDEB642DDAD0CDE0D /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8D2A06049DC40B7BEDCFC97 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		20AB14EE19F8B6190088106A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				20AB152619F8C36A0088106A /* ViewController.m in Sources */,
 				20AB150619F8B6190088106A /* AppDelegate.m in Sources */,
 				20AB150219F8B6190088106A /* main.m in Sources */,
 			);
@@ -356,6 +415,7 @@
 		};
 		20AB151F19F8B6190088106A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0FBB30FB4B348F3863E0F09 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -369,6 +429,7 @@
 		};
 		20AB152019F8B6190088106A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D0FBB30FB4B348F3863E0F09 /* Pods.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -439,6 +500,7 @@
 				20AB152019F8B6190088106A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20AB152119F8B6190088106A /* Build configuration list for PBXNativeTarget "PedometerTests" */ = {
 			isa = XCConfigurationList;
@@ -447,6 +509,7 @@
 				20AB152319F8B6190088106A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
